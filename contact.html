@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Project Polaris</title>
+<meta name="description" content="Get in touch with Project Polaris — email, phone, socials and an enquiry form.">
+<link rel="icon" type="image/jpeg" href="assets/polaris-star.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Alice&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/polaris-star.jpg" alt="Project Polaris" class="brand-mark">
+      <span class="brand-name">Project Polaris</span>
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="team.html">Team</a>
+      <a href="journey.html">Journey</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme">
+        <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+      </button>
+      <a href="https://chat.whatsapp.com/FdbxPikc9aGLxiHu0gWqIX" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Join Us</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <canvas id="starfield-small"></canvas>
+  <div class="planet-scene left" aria-hidden="true">
+    <div class="planet"><div class="moon"></div></div>
+    <div class="planet-ring"></div>
+  </div>
+  <div class="container">
+    <p class="eyebrow reveal">Get In Touch</p>
+    <h1 class="reveal">Join our mission</h1>
+    <p class="reveal">Project Polaris is a community of students, educators, professionals and innovators working together to turn learning into meaningful action. Every contribution helps us move closer to an education system where curiosity, creativity and practical experience thrive.</p>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container join-grid">
+    <div>
+      <div class="contact-info">
+        <a href="mailto:project.polaris8@gmail.com" class="reveal">✉ project.polaris8@gmail.com</a>
+        <a href="tel:+919797042664" class="reveal">☎ +91 97970 42664</a>
+      </div>
+      <div class="join-links">
+        <a href="https://chat.whatsapp.com/FdbxPikc9aGLxiHu0gWqIX" target="_blank" rel="noopener" class="join-link reveal"><span>WhatsApp Community</span><span class="arrow">→</span></a>
+        <a href="https://www.instagram.com/project_polaris_?igsh=cGR3aGdkdjd2Y2hm" target="_blank" rel="noopener" class="join-link reveal"><span>Instagram</span><span class="arrow">→</span></a>
+        <a href="https://www.linkedin.com/company/nova-next-gen-of-vision-and-astronomy/" target="_blank" rel="noopener" class="join-link reveal"><span>LinkedIn</span><span class="arrow">→</span></a>
+        <a href="https://polaris-volunteer-program-8.my.canva.site" target="_blank" rel="noopener" class="join-link reveal"><span>Volunteer Program</span><span class="arrow">→</span></a>
+      </div>
+    </div>
+
+    <!--
+      CONTACT FORM — wired for Netlify Forms (works with zero backend
+      code once this site is deployed on Netlify). See README.md.
+    -->
+    <form class="enquiry-form reveal" id="enquiryForm" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="enquiry">
+      <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <h3>Send an enquiry</h3>
+      <div class="form-row"><label for="fname">Name</label><input type="text" id="fname" name="name" required></div>
+      <div class="form-row"><label for="femail">Email address</label><input type="email" id="femail" name="email" required></div>
+      <div class="form-row"><label for="fwhatsapp">WhatsApp number</label><input type="tel" id="fwhatsapp" name="whatsapp"></div>
+      <div class="form-row"><label for="finterest">I'm interested in</label>
+        <select id="finterest" name="interest">
+          <option>Joining as a volunteer</option><option>Mentorship</option><option>Partnership / Collaboration</option>
+          <option>Speaking at a session</option><option>General enquiry</option>
+        </select>
+      </div>
+      <div class="form-row"><label for="fmessage">Message</label><textarea id="fmessage" name="message" rows="4" required></textarea></div>
+      <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/polaris-star.jpg" alt="Project Polaris" class="brand-mark">
+      <p class="brand-name">Project Polaris</p>
+      <p class="footer-tagline">Learn by building, rather than building after learning.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="about.html">About</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="journey.html">Our Journey</a>
+    </div>
+    <div class="footer-col">
+      <h5>Community</h5>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://polaris-volunteer-program-8.my.canva.site" target="_blank" rel="noopener">Volunteer Program</a>
+    </div>
+    <div class="footer-col">
+      <h5>Follow</h5>
+      <a href="https://chat.whatsapp.com/FdbxPikc9aGLxiHu0gWqIX" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/project_polaris_?igsh=cGR3aGdkdjd2Y2hm" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/nova-next-gen-of-vision-and-astronomy/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Project Polaris. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

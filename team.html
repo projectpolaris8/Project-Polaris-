@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — Project Polaris</title>
+<meta name="description" content="Meet the Project Polaris team and volunteers.">
+<link rel="icon" type="image/jpeg" href="assets/polaris-star.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Alice&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/polaris-star.jpg" alt="Project Polaris" class="brand-mark">
+      <span class="brand-name">Project Polaris</span>
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="team.html" class="active">Team</a>
+      <a href="journey.html">Journey</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme">
+        <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+      </button>
+      <a href="https://chat.whatsapp.com/FdbxPikc9aGLxiHu0gWqIX" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Join Us</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <canvas id="starfield-small"></canvas>
+  <div class="planet-scene left" aria-hidden="true">
+    <div class="planet"><div class="moon"></div></div>
+    <div class="planet-ring"></div>
+  </div>
+  <div class="container">
+    <p class="eyebrow reveal">Our People</p>
+    <h1 class="reveal">Meet the team</h1>
+    <p class="reveal">3 core members, 11 associates and 8 volunteers — and growing.</p>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="star-mark">✦</span><h2>Meet our team</h2></div>
+    <!--
+      TEAM MEMBER TEMPLATE — duplicate a .team-card block to add people.
+      Swap the inline background-image style for a real photo, e.g.:
+      <div class="team-photo" style="background-image:url('assets/team/name.jpg')"></div>
+      Until then it shows the person's initials as a placeholder.
+    -->
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="team-photo">AK</div><h4>Avishi Khare</h4><p class="team-role">Founder</p></div>
+      <div class="team-card reveal"><div class="team-photo">MS</div><h4>Manya Sharma</h4><p class="team-role">Founding Member</p></div>
+      <div class="team-card reveal"><div class="team-photo">AS</div><h4>Anshika Singh</h4><p class="team-role">Content Head</p></div>
+      <div class="team-card reveal"><div class="team-photo">GS</div><h4>Gnana Aditya Suvvari</h4><p class="team-role">Research Head</p></div>
+      <div class="team-card reveal"><div class="team-photo">KS</div><h4>Kanishk Sandhu</h4><p class="team-role">Operations Head</p></div>
+    </div>
+    <p class="team-note">Add real photos to <code>/assets/team/</code> and swap the placeholder — see the comment above the grid in <code>team.html</code>.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal"><span class="star-mark">✦</span><h2>Meet our volunteers</h2></div>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="team-photo">A</div><h4>Aryan</h4><p class="team-role">Research Volunteer</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="recognition">
+      <span class="star-mark reveal">✦</span>
+      <h3 class="reveal">How we recognise contributions</h3>
+      <p class="section-sub reveal">We recognise contributions through a structured reward system.</p>
+      <ul class="chip-list">
+        <li>Performance Score</li><li>Contribution Points</li><li>Digital Badges</li><li>Certificates</li>
+        <li>Leadership Opportunities</li><li>Recommendation Letters</li><li>Special Awards</li><li>Exclusive Learning Opportunities</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container reveal">
+    <span class="star-mark">✦</span>
+    <h2>Want to see your name here?</h2>
+    <a href="get-involved.html" class="btn btn-primary">Join the Team →</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/polaris-star.jpg" alt="Project Polaris" class="brand-mark">
+      <p class="brand-name">Project Polaris</p>
+      <p class="footer-tagline">Learn by building, rather than building after learning.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="about.html">About</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="journey.html">Our Journey</a>
+    </div>
+    <div class="footer-col">
+      <h5>Community</h5>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://polaris-volunteer-program-8.my.canva.site" target="_blank" rel="noopener">Volunteer Program</a>
+    </div>
+    <div class="footer-col">
+      <h5>Follow</h5>
+      <a href="https://chat.whatsapp.com/FdbxPikc9aGLxiHu0gWqIX" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/project_polaris_?igsh=cGR3aGdkdjd2Y2hm" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/nova-next-gen-of-vision-and-astronomy/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Project Polaris. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
